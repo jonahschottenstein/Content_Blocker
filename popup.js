@@ -411,6 +411,8 @@ function clearInput(elem) {
 }
 
 function onGot(item) {
+	if (item.objArr === undefined) return;
+
 	item.objArr.map((obj) => liObjArr.push(obj));
 	console.log(liObjArr);
 
