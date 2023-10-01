@@ -1,4 +1,4 @@
-function createNewLiObj(liInputVal) {
+function createNewLIObj(liInputVal) {
 	function LIObject(pValue, radioValue, urlValue, objStatus, priority) {
 		this.pValue = pValue;
 		this.radioValue = radioValue;
@@ -11,4 +11,4 @@ function createNewLiObj(liInputVal) {
 	return liObject;
 }
 
-export { createNewLiObj };
+export { createNewLIObj };

@@ -1,4 +1,4 @@
-function closestLi(e) {
+function closestLI(e) {
 	return function (selector) {
 		if (selector !== undefined) {
 			return e.target.closest("li").querySelector(selector);
@@ -33,7 +33,7 @@ console.log(closest.li(e)(".block")); */
 
 // COULD ALSO TRY TO ADD:
 /* function liObjArrIndex(e) {
-	return findIndexOf(liObjArr)(isEqualTo(closestLi(e)(".blocked-string")));
+	return findIndexOf(liObjArr)(isEqualTo(closestLI(e)(".blocked-string")));
 }
 
 function findIndexOf(arr) {
@@ -48,4 +48,4 @@ function isEqualTo(elem) {
 	};
 } */
 
-export { closestLi };
+export { closestLI };

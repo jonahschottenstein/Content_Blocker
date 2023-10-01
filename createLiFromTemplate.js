@@ -1,15 +1,15 @@
 // SHOULD PROB BE 'LI'
 // SHOULD PROB NOT HAVE THE FUNCTIONS ALL TOGETHER
-function createLiFromTemplate(liInputVal) {
+function createLIFromTemplate(liInputVal) {
 	const template = document.querySelector("template");
 	const newLI = template.content.querySelector("li").cloneNode(true);
 	// SHOULD CHANGE ".toggle" TO ".collapsible"
-	const setCollapsibleInputId = () => {
+	const setCollapsibleInputID = () => {
 		const allCollapsibles = document.querySelectorAll(".toggle");
 		const collapsible = newLI.querySelector(".collapsible");
 		collapsible.setAttribute("id", `collapsible-${allCollapsibles.length}`);
 	};
-	setCollapsibleInputId();
+	setCollapsibleInputID();
 
 	const setCollapsibleLabelForValue = () => {
 		const allCollapsibleLabels =
@@ -74,4 +74,4 @@ function createLiFromTemplate(liInputVal) {
 	return newLI;
 }
 
-export { createLiFromTemplate };
+export { createLIFromTemplate };
